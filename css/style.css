@@ -46,7 +46,6 @@ body {
 
 .loading-timer {
     background: #000000;
-    display: none;
 }
 
 .loading-timer h1, p {
