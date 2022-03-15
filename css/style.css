@@ -22,6 +22,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border:2px solid #000000;
 }
 
 .set-timer .timer-layout {
@@ -33,7 +34,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .big-timer {
@@ -88,6 +89,18 @@ h1 {
     font-size: 16px;
     color: #000000;
     margin-top: -70px;
+    margin-bottom: 50px;
+    position: absolute;
+}
+
+
+section {
+    width:80%;
+    margin-top: 0.5rem;
+    margin-left: 5vw;
+    height:35px;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -108,11 +121,13 @@ border-radius: 3px;
 .checkbox {
     position: relative;
 }
+
 .checkbox[type="checkbox"]:checked::after {
     content: url(../images/cross.png);
     position: absolute;
-    bottom:4%;
-    right:20%;
+
+    bottom: 4%;
+    right: 20%;
 }
 
 #intervals:checked, #breaks:checked{
@@ -136,9 +151,8 @@ section label {
     border-color: #222222;
     border-radius: 8px;
     background-color: #ffffff;
-    margin-top: 5rem;
+    margin-top: 2rem;
  }
-
 
 .menu-timer {
     background: linear-gradient(rgba( 0, 0, 0, .6), rgba( 0, 0, 0, .6));
