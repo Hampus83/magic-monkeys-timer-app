@@ -240,3 +240,10 @@ section label {
 .pause-timer {
     background-color: #222222;
 }
+
+.interval-header {
+    position: absolute;
+    top: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+}
