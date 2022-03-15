@@ -105,8 +105,8 @@ width: 24px;
 border-radius: 3px;
 }
 
-.checkbox input[type="checkbox"]:checked::after {
-    content: "";
+.checkbox:checked {
+    content: "images\cross.png";
   }
 
 #intervals:checked, #breaks:checked{
