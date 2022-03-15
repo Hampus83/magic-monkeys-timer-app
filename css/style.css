@@ -33,6 +33,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 .big-timer {
@@ -89,6 +90,57 @@ h1 {
     color: #000000;
     margin-top: -70px;
 }
+
+
+section {
+    width:80%;
+    margin-top: 0.5rem;
+    margin-left: 5vw;
+    height:35px;
+}
+
+#intervals, #breaks {
+border: 1.5px solid #222222;
+border-radius: 3px;
+height: 24px;
+width: 24px;
+border-radius: 3px;
+}
+.checkbox {
+    position: relative;
+}
+.checkbox[type="checkbox"]:checked::after {
+    content: url(../images/cross.png);
+    position: absolute;
+    bottom:4%;
+    right:20%;
+}
+
+#intervals:checked, #breaks:checked{
+    background-color: #000000;
+    -webkit-appearance: none;
+}
+
+section label {
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    margin: 15px;
+}
+ #start-timer {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: 0.1em;
+    padding:0.5rem 2.5rem;
+    border-color: #222222;
+    border-radius: 8px;
+    background-color: #ffffff;
+    margin-top: 5rem;
+ }
+
+
 .menu-timer {
     background: linear-gradient(rgba( 0, 0, 0, .6), rgba( 0, 0, 0, .6));
 }
