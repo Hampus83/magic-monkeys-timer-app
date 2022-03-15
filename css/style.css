@@ -24,9 +24,14 @@ body {
     flex-direction: column;
     border:2px solid #000000;
 }
+
+.set-timer .timer-layout {
+    flex-direction: row;
+}
+
 .timer-layout {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -48,7 +53,6 @@ body {
 
 .loading-timer {
     background: #000000;
-    display: none;
 }
 
 .loading-timer h1, p {
@@ -78,8 +82,7 @@ body {
 
 
 h1 {
-    font-size: 20px;
-    
+    font-size: 20px;  
 }
 
 .set-timer .wrapper p {
@@ -100,6 +103,14 @@ section {
     align-items: center;
 }
 
+
+section {
+    width:80%;
+    margin-top: 0.5rem;
+    margin-left: 5vw;
+    height:35px;
+}
+
 #intervals, #breaks {
 border: 1.5px solid #222222;
 border-radius: 3px;
@@ -110,9 +121,11 @@ border-radius: 3px;
 .checkbox {
     position: relative;
 }
+
 .checkbox[type="checkbox"]:checked::after {
     content: url(../images/cross.png);
     position: absolute;
+
     bottom: 4%;
     right: 20%;
 }
@@ -141,9 +154,6 @@ section label {
     margin-top: 2rem;
  }
 
-
-
-
 .menu-timer {
     background: linear-gradient(rgba( 0, 0, 0, .6), rgba( 0, 0, 0, .6));
 }
@@ -170,10 +180,66 @@ section label {
     flex-direction: column;
 }
 
-.alarm-timer .wrapper h1 {
+.alarm-pause-title {
     color: #ffffff;
     font-size: 36px;
     font-weight: 700;
     letter-spacing: 0.1em;
     margin-top: 1rem;
+}
+
+.main-button {  
+    font-family: 'PT Sans', sans-serif;
+    position: absolute;
+    bottom: 3rem;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    background: none;
+    opacity: 0.6;
+    padding: 0.8rem 1.6rem;
+    border-radius: 5px;
+}
+
+.inner-ring {
+    width: 152px;
+    height: 152px;
+    background-color: rgba( 255, 255, 255, .04);
+    position: absolute;
+    border-radius: 55555px;
+    top: 34%;
+}
+
+.outer-ring {
+    width: 234px;
+    height: 234px;
+    background-color: rgba( 255, 255, 255, .03);
+    position: absolute;
+    border-radius: 55555px;
+    top: 28%;
+}
+
+.outer-ring::before {
+    content: "";
+    width: 344px;
+    height: 344px;
+    background-color: rgba( 255, 255, 255, .02);
+    position: absolute;
+    border-radius: 55555px;
+    top: -22%;
+    left: -24%;
+}
+
+.outer-ring::after {
+    content: "";
+    width: 506px;
+    height: 506px;
+    background-color: rgba( 255, 255, 255, .02);
+    position: absolute;
+    border-radius: 55555px;
+    top: -56%;
+    left: -58%;
+}
+
+.pause-timer {
+    background-color: #222222;
 }
