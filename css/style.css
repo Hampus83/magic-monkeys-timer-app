@@ -104,10 +104,17 @@ height: 24px;
 width: 24px;
 border-radius: 3px;
 }
-
-.checkbox input[type="checkbox"]:checked::after {
-    content: "";
-  }
+.checkbox {
+    position: relative;
+}
+.checkbox[type="checkbox"]:checked::after {
+    content: url(../images/cross.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
 
 #intervals:checked, #breaks:checked{
     background-color: #000000;
