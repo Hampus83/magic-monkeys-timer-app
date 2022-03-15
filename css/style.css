@@ -4,7 +4,6 @@ font-family: 'Righteous', cursive; */
 *{
     margin: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
 }
 
 body {
@@ -36,7 +35,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 .big-timer {
@@ -50,7 +48,6 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-
 }
 
 .loading-timer {
