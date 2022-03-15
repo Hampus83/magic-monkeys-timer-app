@@ -200,6 +200,11 @@ section label {
     border-radius: 5px;
 }
 
+.black {
+    color: #000000;
+    border-color: #000000;
+    }
+
 .inner-ring {
     width: 152px;
     height: 152px;
