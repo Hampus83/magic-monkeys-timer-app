@@ -16,9 +16,9 @@ body {
 
 .wrapper{
     width: 100vw;
-    Height: 100vh;
+    height: 100vh;
     position: relative;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -33,6 +33,7 @@ body {
 
 .loading-timer {
     background: #000000;
+    display: none;
 }
 
 .loading-timer h1, p {
@@ -60,7 +61,25 @@ body {
     left: 20px;
 }
 
+
 h1 {
+    font-size: 20px;
+}
+.menu-timer {
+    background: linear-gradient(rgba( 0, 0, 0, .6), rgba( 0, 0, 0, .6));
+}
+.menu-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-top: 3rem;
+}
+.menu-links a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.6rem;
+=======
     font-size: 20px;   
 }
 
