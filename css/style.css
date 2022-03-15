@@ -8,7 +8,6 @@ font-family: 'Righteous', cursive; */
 
 body {
     font-family: 'PT Sans', sans-serif;
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,12 +37,16 @@ body {
 
 .loading-timer h1, p {
     color: white;
-    font-weight: 400;
+    font-weight: 500;
     margin: 6px 3px 0px 3px;
+    letter-spacing: 0.1em;
 }
 
 .loading-timer h1{
     font-size: 20px;
+    line-height: 25px;
+    font-weight: 600;
+    
 }
 
 .loading-timer p{
