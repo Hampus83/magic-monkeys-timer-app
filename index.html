@@ -41,8 +41,21 @@
                     <path d="M2.25 28.5L15.75 15L2.25 1.50001" stroke="#222222" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
             </div>        
-            <p>minutes</p> 
+            <p>minutes</p>
+            <section>
+                <input type="checkbox" id="intervals" class="checkbox">
+                <label for="intervals">intervals</label>
+            </section>
+            <section>
+                <input type="checkbox" id="breaks" class="checkbox">
+                <label for="breaks">5 min break / interval</label>
+            </section>
+            <button id="start-timer">START TIMER</button>
         </div>
+
+
+            
+        
     </div>
     <div class="analog-timer">
         <div class="wrapper timer-layout">
@@ -120,7 +133,7 @@
                 </svg>
             
             <div class="time-object"></div>
-            <button class="abort">ABORT TIMER</button>
+            <button class="main-button black">ABORT TIMER</button>
         </div>
     </div>
     <div class="digital-timer timer-layout">
@@ -133,7 +146,7 @@
                 </svg>
             <h1>interval</h1>
             <div class="time-object"></div>
-            <button class="abort">ABORT TIMER</button>
+            <button class="main-button black">ABORT TIMER</button>
         </div>
     </div>
     <div class="visual-timer timer-layout">
@@ -146,7 +159,7 @@
                 </svg>
             <h1>interval</h1>
             <div class="time-object"></div>
-            <button class="abort">ABORT TIMER</button>
+            <button class="main-button black">ABORT TIMER</button>
         </div>
     </div>
     <div class="text-timer timer-layout">
@@ -159,7 +172,7 @@
                 </svg>
             <h1>interval</h1>
             <div class="time-object"></div>
-            <button class="abort">ABORT TIMER</button>
+            <button class="main-button black">ABORT TIMER</button>
         </div>
     </div>
     <div class="ring-timer timer-layout">
@@ -172,7 +185,7 @@
                 </svg>
             <h1>interval</h1>
             <div class="time-object"></div>
-            <button class="abort">ABORT TIMER</button>
+            <button class="main-button black">ABORT TIMER</button>
         </div>
     </div>
     <div class="alarm-timer">
@@ -184,7 +197,7 @@
             <div class="outer-ring"></div>
 
             <h1 class="alarm-pause-title">Times up!</h1>
-            <button class="main-button">SET NEW TIMER</button>
+            <button class="main-button black">SET NEW TIMER</button>
                 
         </div>
     </div>
