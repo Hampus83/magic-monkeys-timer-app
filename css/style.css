@@ -143,15 +143,12 @@ section label {
     border-radius: 8px;
     background-color: #ffffff;
     margin-top: 5rem;
- }
+}
 
- .digital-timer_timer {
+.digital-timer_timer {
     font-weight: 700; 
     font-size: 80px;
- }
-
-
-
+}
 
 .menu-timer {
     background: linear-gradient(rgba( 0, 0, 0, .6), rgba( 0, 0, 0, .6));
