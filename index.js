@@ -18,6 +18,7 @@ const textPage = document.querySelector('.text-timer');
 const ringPage = document.querySelector('.ring-timer')
 let menuChoice = "analogPage"
 
+import { startTimer } from './modules/easytimer.min.js'
 
 hideAll()
 loadingElem.classList.remove('hidden')
@@ -100,7 +101,7 @@ timeIsUpElem.classList.remove('hidden')
 }
 
 startTimerBtn.addEventListener('click', ()=> {
-    console.log(this[menuChoice])
+    startTimer();
     setTimerElem.classList.add('hidden')
     //DYNAMISKT ELEMENT PLEASE
     // menuChoice.classList.remove('hidden')
