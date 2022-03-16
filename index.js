@@ -15,8 +15,8 @@ const analogPage = document.querySelector('.analog-timer');
 const digitalPage = document.querySelector('.digital-timer');
 const visualPage = document.querySelector('.visual-timer');
 const textPage = document.querySelector('.text-timer');
-const ringPage = document.querySelector('.ring-timer')
-let menuChoice = "analogPage"
+const ringPage = document.querySelector('.ring-timer');
+let menuChoice = ".analog-timer"
 
 import { startTimer } from './modules/easytimer.min.js'
 
@@ -64,31 +64,31 @@ for (let i = 0; i < menuBTN.length; i++) {
 
 ///menyval kanske göra en forloop istället????
 analogMenu.addEventListener('click',()=>
-{menuChoice= "analogPage";
+{menuChoice = ".analog-timer";
 console.log(menuChoice)
 menuElem.classList.add('hidden');
 })
 
 digitalMenu.addEventListener('click',()=>
-{menuChoice= "digitalPage";
+{menuChoice= ".digital-timer";
 console.log(menuChoice)
 menuElem.classList.add('hidden');
 })
 
 visualMenu.addEventListener('click',()=>
-{menuChoice= "visualPage";
+{menuChoice= ".visual-timer";
 console.log(menuChoice)
 menuElem.classList.add('hidden');
 })
 
 textMenu.addEventListener('click',()=>
-{menuChoice= "textPage";
+{menuChoice= ".text-timer";
 console.log(menuChoice)
 menuElem.classList.add('hidden');
 })
 
 circlesMenu.addEventListener('click',()=>
-{menuChoice= "circlesPage";
+{menuChoice= ".ring-timer";
 console.log(menuChoice)
 menuElem.classList.add('hidden');
 })
@@ -102,7 +102,7 @@ timeIsUpElem.classList.remove('hidden')
 
 startTimerBtn.addEventListener('click', ()=> {
     startTimer();
-    setTimerElem.classList.add('hidden')
-    //DYNAMISKT ELEMENT PLEASE
-    // menuChoice.classList.remove('hidden')
+    let menuSelected = eval("menuChoice");
+    setTimerElem.classList.add('hidden');
+    document.querySelector(`${menuChoice}`).classList.remove('hidden');
 })
