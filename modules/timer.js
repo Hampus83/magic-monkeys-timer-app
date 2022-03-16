@@ -3,7 +3,7 @@ let leftButtonElem = document.querySelector('.left-btn');
 let rightButtonElem = document.querySelector('.right-btn');
 let digitalTimerElem = document.querySelector('.digital-timer_timer');
 
-import { Timer } from './easytimer.js'
+import Timer from '../modules/easytimer';
 
 let timerValue = 10;
 
@@ -16,20 +16,18 @@ rightButtonElem.addEventListener('mouseup', () => {
     startvalue.innerText = timerValue;
 })
 
-let timer = new Timer();
-Timer.start({countdown: true, startValues: {seconds: timerValue}});
-digitalTimerElem.innerHTML = timer.getTimeValues().toString();
-timer.start();
-
-timer.addEventListener('secondsUpdated', function (e) {
+function startTimer() {
+    let timer = new Timer();
+    Timer.start({countdown: true, startValues: {seconds: timerValue}});
     digitalTimerElem.innerHTML = timer.getTimeValues().toString();
-});
-
-timer.addEventListener('targetAchieved', function (e) {
-    digitalTimerElem.innerHTML = timer.getTimeValues().toString();
-});
-
-circlesMeny.addEventListener('click', () => {
-    menuChoice = circlesMeny;
-
-})
+    timer.start();
+    
+    timer.addEventListener('secondsUpdated', function (e) {
+        digitalTimerElem.innerHTML = timer.getTimeValues().toString();
+    });
+    
+    timer.addEventListener('targetAchieved', function (e) {
+        digitalTimerElem.innerHTML = timer.getTimeValues().toString();
+    });
+}
+startTimer();
