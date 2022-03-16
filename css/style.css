@@ -12,6 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 .wrapper{
@@ -34,7 +35,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 .big-timer {
@@ -48,7 +48,6 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-
 }
 
 .loading-timer {
@@ -67,7 +66,6 @@ body {
     line-height: 25px;
     font-weight: 600;
     font-family: 'Righteous', cursive;
-    
 }
 
 .loading-timer p{
@@ -104,12 +102,6 @@ section {
 }
 
 
-section {
-    width:80%;
-    margin-top: 0.5rem;
-    margin-left: 5vw;
-    height:35px;
-}
 
 #intervals, #breaks {
 border: 1.5px solid #222222;
@@ -151,7 +143,7 @@ section label {
     border-color: #222222;
     border-radius: 8px;
     background-color: #ffffff;
-    margin-top: 2rem;
+    margin-top: 5rem;
  }
 
 .menu-timer {
@@ -185,7 +177,7 @@ section label {
     font-size: 36px;
     font-weight: 700;
     letter-spacing: 0.1em;
-    margin-top: 1rem;
+    margin-top: 3rem;
 }
 
 .main-button {  
@@ -200,13 +192,23 @@ section label {
     border-radius: 5px;
 }
 
+.black {
+    color: #000000;
+    border-color: #000000;
+}
+.icon-wrapper {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin: 0;
+}
 .inner-ring {
     width: 152px;
     height: 152px;
     background-color: rgba( 255, 255, 255, .04);
     position: absolute;
     border-radius: 55555px;
-    top: 34%;
 }
 
 .outer-ring {
@@ -215,7 +217,6 @@ section label {
     background-color: rgba( 255, 255, 255, .03);
     position: absolute;
     border-radius: 55555px;
-    top: 28%;
 }
 
 .outer-ring::before {
@@ -242,4 +243,11 @@ section label {
 
 .pause-timer {
     background-color: #222222;
+}
+
+.interval-header {
+    position: absolute;
+    top: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.1em;
 }
