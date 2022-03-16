@@ -1,3 +1,5 @@
+const loadingElem = document.querySelector('.loading-timer')
+const setTimerElem= document.querySelector('.set-timer')
 const abortBtn = document.querySelectorAll('abort');
 const allPages = document.querySelectorAll('article');
 const analogMenu = document.querySelector('#analog_menu');
@@ -9,6 +11,13 @@ const menuElem = document.querySelector('.menu-timer');
 const menuBTN = document.querySelectorAll('.menu-btn');
 let menuChoice = ""
 
+hideAll()
+loadingElem.classList.remove('hidden')
+
+loadingElem.addEventListener('click', ()=> {
+hideAll();
+setTimerElem.classList.remove('hidden')
+})
 
 
 
@@ -20,8 +29,6 @@ function hideAll(){
         article.classList.add('hidden')
     }
 }
-
-
 
 
 //MENY LOGIK
