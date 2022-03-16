@@ -19,9 +19,9 @@ const ringPage = document.querySelector('.ring-timer')
 let menuChoice = "analogPage"
 
 
-console.log(menuChoice)
 hideAll()
 loadingElem.classList.remove('hidden')
+
 
 loadingElem.addEventListener('click', ()=> {
 restart()
@@ -31,6 +31,7 @@ function restart(){
         console.log('restarted')
         hideAll();
         setTimerElem.classList.remove('hidden');
+        time.reset()
 }
 
 
@@ -102,5 +103,5 @@ timeIsUpElem.classList.remove('hidden')
 startTimerBtn.addEventListener('click', ()=> {
     console.log(this[menuChoice])
     setTimerElem.classList.add('hidden')
-    window[menuChoice].classList.remove('hidden')
+    this[menuChoice].classList.remove('hidden')
 })

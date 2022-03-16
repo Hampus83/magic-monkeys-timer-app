@@ -12,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .wrapper{
@@ -258,7 +258,7 @@ section label {
     letter-spacing: 0.1em;
 }
 
-.hidden {
+.hiddenS {
     display: none;
 }
 
