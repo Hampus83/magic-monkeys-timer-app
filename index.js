@@ -6,6 +6,7 @@ const visualMenu = document.querySelector('#visual_menu');
 const textMenu = document.querySelector('#text_menu');
 const circlesMenu = document.querySelector('#circles_menu')
 const menuElem = document.querySelector('.menu-timer');
+const menuBTN = document.querySelectorAll('.menu-btn');
 let menuChoice = ""
 
 
@@ -21,8 +22,19 @@ function hideAll(){
 }
 
 
-///menyval
 
+
+//MENY LOGIK
+
+for (let i = 0; i < menuBTN.length; i++) {
+    const btn = menuBTN[i];
+    btn.addEventListener('click',()=>{
+        menuElem.classList.remove('hidden');
+    })   
+}
+
+
+///menyval
 analogMenu.addEventListener('click',()=>
 {menuChoice= "analog";
 console.log(menuChoice)
@@ -53,5 +65,4 @@ circlesMenu.addEventListener('click',()=>
 console.log(menuChoice)
 menuElem.classList.add('hidden');
 })
-
 ////
