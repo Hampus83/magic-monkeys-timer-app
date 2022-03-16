@@ -2,7 +2,6 @@ const loadingElem = document.querySelector('.loading-timer')
 const setTimerElem= document.querySelector('.set-timer')
 const startTimerBtn= document.getElementById('start-timer')
 const abortBtn = document.querySelectorAll('.abort');
-const allPages = document.querySelectorAll('article');
 const analogMenu = document.querySelector('#analog_menu');
 const digitalMenu = document.querySelector('#digital_menu');
 const visualMenu = document.querySelector('#visual_menu');
@@ -12,6 +11,7 @@ const menuElem = document.querySelector('.menu-timer');
 const menuBTN = document.querySelectorAll('.menu-btn');
 const timeIsUpElem = document.querySelector('.alarm-timer');
 //OANVÄNDA
+const allPages = document.querySelectorAll('article');
 const analogPage = document.querySelector('.analog-timer');
 const digitalPage = document.querySelector('.digital-timer');
 const visualPage = document.querySelector('.visual-timer');
@@ -21,9 +21,15 @@ const ringPage = document.querySelector('.ring-timer');
 
 let menuChoice = ".analog-timer"
 
-import { startTimer } from './modules/easytimer.min.js'
+import { startTimer, restart } from './modules/easytimer.min.js'
 
 hideAll()
+function hideAll(){
+    for (let i = 0; i < allPages.length; i++) {
+        const article = allPages[i];
+        article.classList.add('hidden');
+    }
+}
 loadingElem.classList.remove('hidden')
 
 
@@ -31,27 +37,12 @@ loadingElem.addEventListener('click', ()=> {
     restart();
 })
 
-function restart(){
-        console.log('restarted')
-        hideAll();
-        setTimerElem.classList.remove('hidden');
-}
-
 
 for (let i = 0; i < abortBtn.length; i++) {
     const singleAbortBtn = abortBtn[i];
     singleAbortBtn.addEventListener('click', ()=> {
         restart();
     }) 
-}
-
-
-
-function hideAll(){
-    for (let i = 0; i < allPages.length; i++) {
-        const article = allPages[i];
-        article.classList.add('hidden');
-    }
 }
 
 
@@ -104,4 +95,4 @@ startTimerBtn.addEventListener('click', ()=> {
     document.querySelector(`${menuChoice}`).classList.remove('hidden');
 })
 
-export { timeisup };
+export { timeisup, hideAll };
