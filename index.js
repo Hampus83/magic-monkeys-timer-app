@@ -6,7 +6,6 @@ const allPages = document.querySelectorAll('article');
 
 
 
-hideAll()
 
 
 
