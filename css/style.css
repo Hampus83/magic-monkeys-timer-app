@@ -289,3 +289,12 @@ section label {
     transform-origin: bottom;
     transform: rotate(90deg);
 }
+
+.visual-object{
+    height:100%;
+    width:100%;
+    position: absolute;
+    background-color: #222222;
+    top:-100%;
+    right:0px;
+}
