@@ -159,6 +159,7 @@ section label {
     flex-direction: column;
     gap: 1.5rem;
     padding-top: 3rem;
+    font-weight: 700;
 }
 .menu-links a {
     text-decoration: none;
@@ -257,7 +258,7 @@ section label {
     letter-spacing: 0.1em;
 }
 
-.hidden {
+.hiddenS {
     display: none;
 }
 
