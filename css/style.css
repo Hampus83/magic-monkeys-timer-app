@@ -263,7 +263,7 @@ section label {
     letter-spacing: 0.1em;
 }
 
-.hidden {
+.hiddens {
     display: none;
 }
 
@@ -276,7 +276,8 @@ section label {
     border-radius: 999px;
 }
 
-.seconds-arm {
+.second-hand {
+    z-index: 2;
     position: absolute;
     width: 4px;
     height: 120px;
@@ -287,7 +288,22 @@ section label {
     border-top-right-radius: 50px;
     top: 32.1%;
     transform-origin: bottom;
-    transform: rotate(90deg);
+    transform: rotate(0deg);
+}
+
+.min-hand {
+    position: absolute;
+    width: 9px;
+    height: 90px;
+    background-color: #811b1b;
+    border: 2px solid #000;
+    border-bottom: none;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    top: 36.5%;
+    left: 48.94%;
+    transform-origin: bottom;
+    transform: rotate(0deg);
 }
 
 .visual-object{
