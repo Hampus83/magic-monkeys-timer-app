@@ -9,7 +9,7 @@
     
 </head>
 <body>
-    <div class="loading-timer">
+    <article class="loading-timer">
         <div class="wrapper">
             <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="35.5" y="35" width="12" height="35" transform="rotate(-180 35.5 35)" fill="white"/>
@@ -21,9 +21,9 @@
             <h1>INTERVAL</h1>
             <p>For all your timing needs</p>
         </div>
-    </div>
+    </article>
     
-    <div class="set-timer">
+    <article class="set-timer">
         <div class="wrapper">
             <div class="timer-layout">
                 <svg class="menu-btn" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -51,12 +51,9 @@
             </section>
             <button id="start-timer">START TIMER</button>
         </div>
+    </article>
 
-
-            
-        
-    </div>
-    <div class="analog-timer">
+    <article class="analog-timer">
         <div class="wrapper timer-layout">
 
             <h1 class="interval-header">interval</h1>
@@ -134,8 +131,9 @@
             <div class="time-object"></div>
             <button class="main-button black" id="abort">ABORT TIMER</button>
         </div>
-    </div>
-    <div class="digital-timer">
+    </article>
+
+    <article class="digital-timer">
         <div class="wrapper timer-layout">
             <svg class="menu-btn" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="32" width="12" height="32" transform="rotate(90 32 0)" fill="#222222"/>
@@ -149,8 +147,9 @@
             </div>
             <button class="main-button black" id="abort">ABORT TIMER</button>
         </div>
-    </div>
-    <div class="visual-timer timer-layout">
+    </article>
+
+    <article class="visual-timer timer-layout">
         <div class="wrapper">
             <svg class="menu-btn" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="32" width="12" height="32" transform="rotate(90 32 0)" fill="#222222"/>
@@ -162,8 +161,9 @@
             <div class="time-object"></div>
             <button class="main-button black" id="abort">ABORT TIMER</button>
         </div>
-    </div>
-    <div class="text-timer timer-layout">
+    </article>
+
+    <article class="text-timer timer-layout">
         <div class="wrapper">
             <svg class="menu-btn" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="32" width="12" height="32" transform="rotate(90 32 0)" fill="#222222"/>
@@ -175,8 +175,9 @@
             <div class="time-object"></div>
             <button class="main-button black" id="abort">ABORT TIMER</button>
         </div>
-    </div>
-    <div class="ring-timer timer-layout">
+    </article>
+
+    <article class="ring-timer timer-layout">
         <div class="wrapper">
             <svg class="menu-btn" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="32" width="12" height="32" transform="rotate(90 32 0)" fill="#222222"/>
@@ -188,8 +189,9 @@
             <div class="time-object"></div>
             <button class="main-button black" id="abort">ABORT TIMER</button>
         </div>
-    </div>
-    <div class="alarm-timer">
+    </article>
+
+    <article class="alarm-timer">
         <div class="wrapper">
             <section class="icon-wrapper">
                 <svg class="alarm-img" width="85" height="86" viewBox="0 0 85 86" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -203,8 +205,9 @@
             <button class="main-button">SET NEW TIMER</button>
                 
         </div>
-    </div>
-    <div class="pause-timer">
+    </article>
+
+    <article class="pause-timer">
         <div class="wrapper">
             <section class="icon-wrapper">
                 <svg class="pause-img" width="40" height="50" viewBox="0 0 40 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -219,8 +222,9 @@
             <button class="main-button">NO PAUSE, GO NOW!</button>
             
         </div>
-    </div>
-    <div class="menu-timer">
+    </article>
+
+    <article class="menu-timer">
         <div class="wrapper">
             <svg class="menu-btn" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="32" width="12" height="32" transform="rotate(90 32 0)" fill="#ffffff"/>
@@ -236,8 +240,14 @@
                 <a href="">CIRCLES TIMER</a>
             </section>
         </div>
-    </div>
-    
+    </article>
+
+    <script src="lib/easytimer/dist/easytimer.min.js"></script>
+<script>
+    var timerInstance = new easytimer.Timer();
+</script>
+
+
     <script src="index.js" type="module"></script>
 </body>
 </html>

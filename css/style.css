@@ -23,7 +23,6 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border:2px solid #000000;
 }
 
 .set-timer .timer-layout {
@@ -144,15 +143,12 @@ section label {
     border-radius: 8px;
     background-color: #ffffff;
     margin-top: 5rem;
- }
+}
 
- .digital-timer_timer {
+.digital-timer_timer {
     font-weight: 700; 
     font-size: 80px;
- }
-
-
-
+}
 
 .menu-timer {
     background: linear-gradient(rgba( 0, 0, 0, .6), rgba( 0, 0, 0, .6));
@@ -258,4 +254,8 @@ section label {
     top: 1.5rem;
     font-weight: 400;
     letter-spacing: 0.1em;
+}
+
+.hide {
+    display: none;
 }
