@@ -25,7 +25,7 @@ loadingElem.classList.remove('hidden')
 
 
 loadingElem.addEventListener('click', ()=> {
-restart()
+    restart();
 })
 
 function restart(){
@@ -38,7 +38,7 @@ function restart(){
 for (let i = 0; i < abortBtn.length; i++) {
     const singleAbortBtn = abortBtn[i];
     singleAbortBtn.addEventListener('click', ()=> {
-        restart()
+        restart();
     }) 
 }
 
@@ -47,7 +47,7 @@ for (let i = 0; i < abortBtn.length; i++) {
 function hideAll(){
     for (let i = 0; i < allPages.length; i++) {
         const article = allPages[i];
-        article.classList.add('hidden')
+        article.classList.add('hidden');
     }
 }
 
@@ -89,15 +89,15 @@ menuElem.classList.add('hidden');
 
 circlesMenu.addEventListener('click',()=>
 {menuChoice= ".ring-timer";
-console.log(menuChoice)
+console.log(menuChoice);
 menuElem.classList.add('hidden');
 })
 ////
 
 // callfunktion för när tiden är ute!
 function timeisup(){
-hideAll()
-timeIsUpElem.classList.remove('hidden')
+    hideAll();
+    timeIsUpElem.classList.remove('hidden');
 }
 
 startTimerBtn.addEventListener('click', ()=> {
@@ -106,3 +106,5 @@ startTimerBtn.addEventListener('click', ()=> {
     setTimerElem.classList.add('hidden');
     document.querySelector(`${menuChoice}`).classList.remove('hidden');
 })
+
+export { timeisup };
