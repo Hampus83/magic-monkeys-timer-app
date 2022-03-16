@@ -3,8 +3,6 @@ let leftButtonElem = document.querySelector('.left-btn');
 let rightButtonElem = document.querySelector('.right-btn');
 let digitalTimerElem = document.querySelector('.digital-timer_timer');
 
-import Timer from '../modules/easytimer';
-
 let timerValue = 10;
 
 leftButtonElem.addEventListener('mouseup', () => {
@@ -17,7 +15,7 @@ rightButtonElem.addEventListener('mouseup', () => {
 })
 
 function startTimer() {
-    let timer = new Timer();
+    let timer = new easycounter.Timer();
     Timer.start({countdown: true, startValues: {seconds: timerValue}});
     digitalTimerElem.innerHTML = timer.getTimeValues().toString();
     timer.start();
