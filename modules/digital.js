@@ -1,0 +1,1 @@
+const digitalTimerElem = document.querySelector('.digital-timer_timer');
