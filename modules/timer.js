@@ -26,6 +26,10 @@ function startTimer() {
     
     timer.addEventListener('targetAchieved', function (e) {
         digitalTimerElem.innerHTML = timer.getTimeValues().toString();
+ 
     });
 }
 startTimer();
+
+
+
