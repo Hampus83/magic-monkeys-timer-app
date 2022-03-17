@@ -81,7 +81,12 @@ body {
     top:20px;
     left: 20px;
 }
-
+.analog-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
 
 h1 {
     font-size: 20px;  
@@ -284,9 +289,9 @@ section label {
     background-color: #555555;
     border: 1px solid #000;
     border-bottom: none;
+    bottom: 50%;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
-    top: 32.1%;
     transform-origin: bottom;
     transform: rotate(0deg);
 }
@@ -295,13 +300,12 @@ section label {
     position: absolute;
     width: 9px;
     height: 90px;
+    bottom: 50%;
     background-color: #811b1b;
     border: 2px solid #000;
     border-bottom: none;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
-    top: 36.5%;
-    left: 48.94%;
     transform-origin: bottom;
     transform: rotate(0deg);
 }
