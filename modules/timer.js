@@ -15,10 +15,12 @@ rightButtonElem.addEventListener('mouseup', () => {
 })
 
 function startTimer() {
+    
     let timer = new easycounter.Timer();
     Timer.start({countdown: true, startValues: {seconds: timerValue}});
     digitalTimerElem.innerHTML = timer.getTimeValues().toString();
     timer.start();
+    analogTimer()
     
     timer.addEventListener('secondsUpdated', function (e) {
         digitalTimerElem.innerHTML = timer.getTimeValues().toString();

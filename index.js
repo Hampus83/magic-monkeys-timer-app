@@ -59,27 +59,33 @@ for (let i = 0; i < menuBTN.length; i++) {
 ///menyval kanske göra en forloop istället????
 analogMenu.addEventListener('click',()=>
 {menuChoice = ".analog-timer";
-menuElem.classList.add('hidden');
+hideAll();
+analogPage.classList.remove('hidden');
 })
 
 digitalMenu.addEventListener('click',()=>
 {menuChoice= ".digital-timer";
-menuElem.classList.add('hidden');
+hideAll()
+digitalPage.classList.remove('hidden');
+
 })
 
 visualMenu.addEventListener('click',()=>
 {menuChoice= ".visual-timer";
-menuElem.classList.add('hidden');
+hideAll();
+visualPage.classList.remove('hidden');
 })
 
 textMenu.addEventListener('click',()=>
 {menuChoice= ".text-timer";
-menuElem.classList.add('hidden');
+hideAll()
+textPage.classList.remove('hidden');
 })
 
 circlesMenu.addEventListener('click',()=>
 {menuChoice= ".ring-timer";
-menuElem.classList.add('hidden');
+hideAll();
+circlesPage.classList.remove('hidden');
 })
 ////
 
