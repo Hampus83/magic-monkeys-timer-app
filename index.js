@@ -10,14 +10,13 @@ const circlesMenu = document.querySelector('#circles_menu')
 const menuElem = document.querySelector('.menu-timer');
 const menuBTN = document.querySelectorAll('.menu-btn');
 const timeIsUpElem = document.querySelector('.alarm-timer');
-//OANVÄNDA
 const allPages = document.querySelectorAll('article');
 const analogPage = document.querySelector('.analog-timer');
 const digitalPage = document.querySelector('.digital-timer');
 const visualPage = document.querySelector('.visual-timer');
 const textPage = document.querySelector('.text-timer');
 const ringPage = document.querySelector('.ring-timer');
-//
+
 
 let menuChoice = ".analog-timer"
 
