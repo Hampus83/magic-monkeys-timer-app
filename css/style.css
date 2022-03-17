@@ -326,10 +326,11 @@ section label {
 }
 
 .text-object {
+    margin-left: 40px;
     font-weight: 700;
     font-size: 30px;
     letter-spacing: 0.1em;
     line-height: 140%;
     width: 70%;
-    
+
 }
