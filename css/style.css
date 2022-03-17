@@ -317,4 +317,19 @@ section label {
     background-color: #222222;
     top: 0;
     right:0px;
+    opacity: 0,9;
+    z-index: -1;
+}
+
+.white {
+    color:#ffffff;
+}
+
+.text-object {
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 0.1em;
+    line-height: 140%;
+    width: 70%;
+    
 }

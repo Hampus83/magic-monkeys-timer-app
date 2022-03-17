@@ -83,11 +83,11 @@ textPage.classList.remove('hidden');
 })
 
 circlesMenu.addEventListener('click',()=>
-{menuChoice= ".ring-timer";
+{menuChoice= ".ringPage";
 hideAll();
-circlesPage.classList.remove('hidden');
+ringPage.classList.remove('hidden');
 })
-////
+
 
 // callfunktion för när tiden är ute!
 function timeisup(){
@@ -99,6 +99,7 @@ startTimerBtn.addEventListener('click', ()=> {
     startTimer();
     setTimerElem.classList.add('hidden');
     document.querySelector(`${menuChoice}`).classList.remove('hidden');
+   
 })
-
+ // wrapper:nth:child[${minutvärdre}].classList.add('görfullclass')
 export { timeisup, hideAll };
